@@ -8,6 +8,10 @@
           fetch="https://github.com/Spark-Rom"
           revision="refs/heads/pyro-next"/>
 
+  <remote name="spark-ext"
+          fetch="https://github.com/SparkOS-Extended"
+          revision="refs/heads/pyro-next"/>
+
   <remote  name="evo"
            fetch="https://github.com/Evolution-X"
            revision="refs/heads/snow" />
@@ -51,7 +55,7 @@
 
   <!-- Framework repos -->
   <project path="frameworks/av" name="frameworks_av" remote="spark" />
-  <project path="frameworks/base" name="frameworks_base" remote="spark" />
+  <project path="frameworks/base" name="frameworks_base" remote="spark-ext" />
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="spark" />
   <project path="frameworks/native" name="frameworks_native" remote="spark" />
   <project path="external/yifan" name="platform_external_yifan" remote="spark" />
@@ -77,12 +81,12 @@
   <project path="manifest" name="manifest" remote="spark" />
 
   <!-- Packages repos -->
-  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="spark" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="spark-ext" />
   <project path="packages/apps/SparkWallpaperStub" name="packages_apps_SparkWallpaperStub" remote="spark" />
-  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="spark" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="spark-ext" />
   <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="spark" />
   <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="spark" />
-  <project path="packages/apps/Fireworks" name="packages_apps_Fireworks" remote="spark" />
+  <project path="packages/apps/Fireworks" name="packages_apps_Fireworks" remote="spark-ext" />
   <project path="packages/apps/LineageParts" name="packages_apps_LineageParts" remote="spark" />
   <project path="packages/apps/GameSpace" name="packages_apps_GameSpace" remote="spark" />
   <project path="packages/apps/DesktopMode" name="packages_apps_DesktopMode" remote="spark" />  
@@ -99,14 +103,17 @@
   <project path="packages/modules/DnsResolver" name="packages_modules_DnsResolver" remote="spark" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="spark" />
 
+  <!-- Privoder repos -->
+  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="spark-ext" />
+
   <!-- System repos -->
   <project path="system/core" name="android_system_core" remote="spark" />
   <project path="system/memory/lmkd" name="system_memory_lmkd" remote="spark" />
 
   <!-- vendor repos -->
   <project path="vendor/gms" name="vendor_gms" remote="spark-gitlab" />  
-  <project path="vendor/spark" name="platform_vendor_spark" remote="spark" />
+  <project path="vendor/spark" name="platform_vendor_spark" remote="spark-ext" />
   <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="spark" />
-  <project path="vendor/addons" name="vendor_addons" remote="spark" />
+  <project path="vendor/addons" name="vendor_addons" remote="spark-ext" />
 
 </manifest>
