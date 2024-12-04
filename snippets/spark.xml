@@ -54,10 +54,10 @@
   <project path="external/tigervnc" name="external_tigervnc" remote="spark" />
 
   <!-- Framework repos -->
-  <project path="frameworks/av" name="frameworks_av" remote="spark" />
+  <project path="frameworks/av" name="frameworks_av" remote="spark-ext" />
   <project path="frameworks/base" name="frameworks_base" remote="spark-ext" />
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="spark" />
-  <project path="frameworks/native" name="frameworks_native" remote="spark" />
+  <project path="frameworks/native" name="frameworks_native" remote="spark-ext" />
   <project path="external/yifan" name="platform_external_yifan" remote="spark" />
 
   <!-- General repos -->
@@ -65,7 +65,7 @@
   <project path="lineage-sdk" name="lineage-sdk" remote="spark" />
   <project path="bionic" name="bionic" remote="spark" />
   <project path="bootable/recovery" name="bootable_recovery" remote="spark" />
-  <project path="build/make" name="build_make" remote="spark" >
+  <project path="build/make" name="build_make" remote="spark-ext" >
     <copyfile src="core/root.mk" dest="Makefile" />
     <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
     <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -94,7 +94,7 @@
   <project path="packages/apps/FaceUnlock" name="platform_packages_apps_FaceUnlock" remote="spark" />
 
   <!-- Services repos -->
-  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="spark" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="spark-ext" />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="spark" />
   <project path="packages/services/OmniJaws" name="packages_services_OmniJaws" remote="spark" />
   <project path="packages/services/VncFlinger" name="packages_services_VncFlinger" remote="spark" />
@@ -103,16 +103,13 @@
   <project path="packages/modules/DnsResolver" name="packages_modules_DnsResolver" remote="spark" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="spark" />
 
-  <!-- Privoder repos -->
-  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="spark-ext" />
-
   <!-- System repos -->
   <project path="system/core" name="android_system_core" remote="spark" />
   <project path="system/memory/lmkd" name="system_memory_lmkd" remote="spark" />
 
   <!-- vendor repos -->
   <project path="vendor/gms" name="vendor_gms" remote="spark-gitlab" />  
-  <project path="vendor/spark" name="platform_vendor_spark" remote="spark-ext" />
+  <project path="vendor/spark" name="vendor_spark" remote="spark-ext" />
   <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="spark" />
   <project path="vendor/addons" name="vendor_addons" remote="spark-ext" />
 
